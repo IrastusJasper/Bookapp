@@ -14,12 +14,12 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSignUp(firstname: string,lastname: string,email: any,password: any,){
-    this.accountService.addAccount(firstname,lastname,email,password);
-
+  onSignUp(firstname: string,lastname: string,email: any,password: any){
+    this.accountService.addAccount(firstname,lastname,email,password,);
+    alert('Register successful');
   }
+
   onClick(feature: string){
     this.featureSelection.emit(feature)
-    alert('Register successful');
   }
 }
