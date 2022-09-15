@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- <a class="list-group-item clearfix" (click)="onSelect()" *ngFor="let  of books ">
+                <h4 class="list-group-item-heading">{{books.BookName}}</h4>
+                <p class="list-group-item-text">{{books.AuthorName}}</p>
+                <img [src]="books.ImageUrl" alt="Chicken" class="img-responsive" style="max-height: 50px;">
+                <p class="list-group-item-text">{{books.PublishingDate}}</p>
+                <p class="list-group-item-text">{{books.BookPages}}</p>
+            </a> -->
+            <h4 class="list-group-item-heading">{{books.BookName}}</h4>
+            <p class="list-group-item-text">{{books.AuthorName}}</p>
+            <div class="cover">
+                <img [src]="books.ImageUrl" alt="Chicken" class="img-responsive" style="max-height: 50px;">
+            </div>
+            <p class="list-group-item-text">{{books.PublishingDate}}</p>
+            <p class="list-group-item-text">{{books.BookPages}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),
+    url(https://miro.medium.com/max/1200/1*MpBQODmX2Sp3SfwUu1ZY0Q@2x.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}

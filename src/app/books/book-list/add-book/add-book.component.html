@@ -1,0 +1,32 @@
+<div class="container">
+    <h3>Add Books</h3>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="Addimage"> Image Url </label>
+                <input type="url" id="imageUrl" name="image" class="form-control" #ImageUrl>
+            </div>
+            <div class="form-group">
+                <label for="BookName"> Book Name</label>
+                <input type="text" id = "bookname" name="bookname" class="form-control" #BookName>
+            </div>
+            <div class="form-group">
+                <label for="Authorname"> Author Name</label>
+                <input type="text" id="authorname" name="authorname" class="form-control" #AuthorName>
+            </div>
+            <div class="form-group">
+                <label for="BookPages"> Book Pages</label>
+                <input type="number" id="bookpage" name="bookpage" class="form-control" #BookPages>
+            </div>
+            <div class="form-group">
+                <label for="PublishedDate">Published Date</label>
+                <input type="date" id="publishedDate" name="publishedDate" class="form-control"#PublishingDate>
+            </div>
+            <div class="form-btn">
+                <button class="btn btn-primary" type="submit" routerLink="/booklist" (click)="onAddbook(ImageUrl.value,BookName.value,AuthorName.value,BookPages.value,PublishingDate.value)">
+                    Create
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

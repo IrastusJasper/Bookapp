@@ -1,9 +1,14 @@
-
+<app-header></app-header>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <app-register (featureSelection)="onNavigate($event)" *ngIf="loadedFeature === 'login'"></app-register>
-            <app-login *ngIf="loadedFeature !== 'login'"></app-login>
+        <div class="col-sm-3">
+            <router-outlet></router-outlet>
+            <!-- <app-register (featureSelection)="onNavigate($event)" *ngIf="loadedFeature === 'login'"></app-register>
+            <app-login *ngIf="loadedFeature !== 'login'"></app-login>  -->
+            <!-- <app-catagery-list></app-catagery-list>
+            <app-add-catagery></app-add-catagery> 
+            <app-add-book></app-add-book> --->
+            <!-- <app-book-list></app-book-list>  -->
         </div>
     </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h3>Creating Catagory</h3>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="Catagoryname">Catagory Name</label>
+                <input type="text" id="Catagoryname" name="Catagoryname" class="form-control" #Name>
+            </div>
+            <div class="form-group">
+                <label for="Imageurl">Image Url</label>
+                <input type="url" id="imageUrl" name ="image"class="form-control" #imageUrl>
+            </div>
+           <div class="col-xs-12">
+            <div class="form-button">
+                <button class="btn btn-primary" type="submit" 
+                routerLink ="" (click)="onAddCatagery(Name.value,imageUrl.value)">Create Catagery</button>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>

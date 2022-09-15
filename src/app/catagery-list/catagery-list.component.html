@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Catagery</h2>
+    <div class="row">
+        <div class="col-xs-12">
+            <p>No Catagery are Added</p>
+            <br>
+            <figure class="thumb" *ngFor="let catageryData of catageryData">
+                <a class="list-group-item clearfix"  >
+                    <div class="cover">
+                        <img [src]="catageryData.ImageUrl" alt="catageryName" class="img-responsive">
+                    </div>
+                </a>
+                <br>
+                <h4 class = "list-group-item-heading">{{catageryData.Name}}</h4>
+            </figure>
+            <br>
+            <br>
+            <button class="btn btn-primary" type="button"
+            routerLink="/addcatagery">Add New Catagery
+            </button>
+        </div>
+    </div>
+</div>

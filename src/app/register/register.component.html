@@ -4,28 +4,28 @@
         <div class="col-sm-3">
             <div class="form-group">
                 <label for="firstname"> First Name</label>
-                <input type="text" id="firstname" name="firstname" class="form-control" #firstname>
+                <input type="text" id="firstname" name="firstname" class="form-control" required #firstname>
             </div>
             <div class="form-group">
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" class="form-control" #lastname> 
+                <input type="text" id="lastname" name="lastname" class="form-control" required #lastname> 
             </div>
             <div class="form-group">
                 <label for="email">Email Id</label>
-                <input type="text" id="emailid" name="email" class="form-control" #email>
+                <input type="text" id="emailid" name="email" class="form-control" required #email>
             </div>
             <div class="form-group">
-                <label for="newpassword">Password</label>
-                <input type="password" id="password" name="password" class="form-control" #password>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required #password>
             </div>
             <div class="form-btn">
                 <button class="btn btn-primary" type="submit" 
                     (click)="onSignUp(firstname.value,lastname.value,email.value,password.value)"
-                    (click)="onClick('')">
+                    routerLink="/login">
                     Sign Up
                 </button>
                 <h6>If already have account</h6>
-                <a href="#" (click)="onClick('')" type="button">Sign In</a>
+                <button class="btn btn-primary" (click)="onLoadSign()">Sign In</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,13 @@
+<div class="container">
+  <figure class="thumb">
+  <a routerLink="bookDetail" class="list-group-item clearfix" (click)="onSelect()">
+    <div class="cover">
+      <img [src]="books.ImageUrl" alt="bookimage" class="img-responsive" >
+    </div>
+  </a>
+  <br>
+  <h4 class = "list-group-item-heading">{{books.BookName}}</h4>
+  <p class = "list-group-item-text">{{books.AuthorName}}</p>
+  <br>
+</figure>  
+</div>
